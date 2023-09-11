@@ -1,0 +1,28 @@
+﻿  App.cpp
+  BaseTexture.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+  IMGTexture.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+  MovePack.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\Utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\MovePack.cpp(430,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  MovePackQueue.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\Utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\MovePackQueue.cpp(41,19): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  TextTexture.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+  TextureMover.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\Utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+  main.cpp
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\utils.h(13,1): warning C4005: 'INT_MAX': macro redefinition
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\limits.h(36,1): message : see previous definition of 'INT_MAX'
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\main.cpp(30,10): warning C4091: '': ignored on left of 'App::App' when no variable is declared
+  Generating Code...
+C:\Users\Lucas\source\repos\firstSDLWindow\firstSDLWindow\MovePack.cpp(390): warning C4717: 'Packs::MovePack::operator=': recursive on all control paths, function will cause runtime stack overflow
+  firstSDLWindow.vcxproj -> C:\Users\Lucas\source\repos\firstSDLWindow\x64\Debug\firstSDLWindow.exe
