@@ -68,27 +68,27 @@ Path is the only TranformType that **MUST** be included as an argument; failing 
 ### Wave( _Wave::Type type, int amplitude, float period, bool invert = false_ )
 Wave modifies the texture's path to create a periodic wave movement. 
 
-_Wave::Type type_ - An enumerated value in the Wave struct that specifies the kind of wave function that will be applied. Currently, only Wave::SINE is supported.
+*_Wave::Type type_ - An enumerated value in the Wave struct that specifies the kind of wave function that will be applied. Currently, only Wave::SINE is supported.
  
-_int amplitude_, _float period_ - The amplitude and periodicity of the wave. Period is typically a value < 1.0.
+*_int amplitude_, _float period_ - The amplitude and periodicity of the wave. Period is typically a value < 1.0.
 
-_bool invert_ - Optional parameter to invert the wave, applying offsets along the x-axis.
+*_bool invert_ - Optional parameter to invert the wave, applying offsets along the x-axis.
 
 
 ### Rotation( _int rotationSpeed, double startingAngle (optional), LDPoint center (optional)_ )
 Rotation rotates textures around a center point as it travels along a Path. 
 
-_int rotationSpeed_ - How fast the rotation will be. Positive values for clockwise rotation, negative values for counter-clockwise, 0 for fixed.
+*_int rotationSpeed_ - How fast the rotation will be. Positive values for clockwise rotation, negative values for counter-clockwise, 0 for fixed.
  
-_double startingAngle_ - Optional parameter to begin the rotation at an angle different than 0 degrees (% 360).   
+*_double startingAngle_ - Optional parameter to begin the rotation at an angle different than 0 degrees (% 360).   
 
-_LDPoint center_ - Optional parameter to rotate the texture around a point different than its center.
+*_LDPoint center_ - Optional parameter to rotate the texture around a point different than its center.
 
 
 ### Flip( _Flip::Type type_ )
 Flips the texture for the entirety of the step. 
 
-_Flip::Type type_ - and enumerated value representing how the texture is flipped. Currently supported types are Rotation::HORIZONTAL, Rotation::VERTICAL, Rotation::DIAGONAL, and Rotation::NONE.
+*_Flip::Type type_ - and enumerated value representing how the texture is flipped. Currently supported types are Rotation::HORIZONTAL, Rotation::VERTICAL, Rotation::DIAGONAL, and Rotation::NONE.
 
 ---
 ## PRESETS (Beta)
