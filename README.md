@@ -95,7 +95,7 @@ _Flip::Type type_ - and enumerated value representing how the texture is flipped
 
 **Preset** is a public class inside TextureMover that allows users to save created collections of steps, as well as load previously created steps into new TextureMover objects.
 
-Saving a preset is accomplished by calling the method **.save(std::string presetName)** after adding all desired steps to the mover.
+Saving a preset is accomplished by calling the method **.save(std::string presetName)** after adding all desired steps to the mover. 
 
 
 
