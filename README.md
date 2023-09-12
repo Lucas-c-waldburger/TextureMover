@@ -53,16 +53,16 @@ Currently, the user must add execution delays manually.
 ## TRANSFORM TYPES
 
 ### Path( _LDPoint origin, LDPoint destination, int speed, bool inPlace = false_ )
-⋅⋅⋅Path handles the actual movement of the texture across the screen. 
-⋅⋅⋅Path is the only TranformType that **MUST** be included as an argument; failing to do so will raise an invalid_argument exception.
+Path handles the actual movement of the texture across the screen. 
+Path is the only TranformType that **MUST** be included as an argument; failing to do so will raise an invalid_argument exception.
 
-_LDPoint origin, LDPoint destination_ - An x and y location to mark where the texture begins and ends it's movement on screen. When adding steps beyond the first addStep(), origin may be excluded. 
+*_LDPoint origin, LDPoint destination_ - An x and y location to mark where the texture begins and ends it's movement on screen. When adding steps beyond the first addStep(), origin may be excluded. 
 					This will cause origin to be assigned the point specified in the previous step's Path.destination, useful for creating sequences of connected movements.
 					**NOTE:** LDPoint is a struct derived from the standard SDL_Point that adds various logic and artithmetic operator overloads. 
  
-_int speed_ - How fast the texture will reach it's target destination.
+*_int speed_ - How fast the texture will reach it's target destination.
 
-_bool inPlace_ - Optional parameter to carry out the texture's transformations in place. Destination must still be included, as it represents how long the step will last (equal to how long it would take for the texture to reach its' 			 destination).
+*_bool inPlace_ - Optional parameter to carry out the texture's transformations in place. Destination must still be included, as it represents how long the step will last (equal to how long it would take for the texture to reach its' 			 destination).
 
 
 ### Wave( _Wave::Type type, int amplitude, float period, bool invert = false_ )
