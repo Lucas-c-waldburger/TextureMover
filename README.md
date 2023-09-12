@@ -37,11 +37,11 @@ Flip{ Flip::Type::DIAGONAL }
 ```
 Multiple animation steps may be added to a single TextureMover by calling subsequent addStep()s. 
 
-Finally, the TextureMover is executed in the main loop by calling it's overloaded operator() between renderer.clear() and imgTexture.draw() 
+Finally, the TextureMover is executed in the main loop by calling its overloaded operator() between renderer.clear() and imgTexture.draw() 
 ```
 renderer.clear();
 
-**mover();**
+mover();
 
 imgTexture.draw(renderer);
 renderer.present();
