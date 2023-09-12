@@ -58,7 +58,6 @@ Path is the only TranformType that **MUST** be included as an argument; failing 
 
 *_LDPoint origin, LDPoint destination_ - An x and y location to mark where the texture begins and ends its movement on screen. When adding steps beyond the first addStep(), origin may be excluded. 
 					This will cause origin to be assigned the point specified in the previous step's Path.destination, useful for creating sequences of connected movements.
-     
 					**NOTE:** LDPoint is a struct derived from the standard SDL_Point that adds various logic and artithmetic operator overloads 
  
 *_int speed_ - How fast the texture will reach its target destination.
