@@ -1,10 +1,5 @@
 #include "TextureMover.h"
 
-// NEEDS TO
-	// find final width & height of texture once fully scaled
-	// either temporarily change mPath->destination to it and save original
-	
-
 /*---------------------------------------------- TextureMover ----------------------------------------------*/
 
 TextureMover::TextureMover() :
