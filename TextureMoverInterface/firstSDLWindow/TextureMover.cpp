@@ -69,14 +69,14 @@ bool TextureMover::move() /***********************************/
 	else
 	{	
 		if (loadedPack->mWave.active)			 // 				 								   
-			applyWave(nextPoint);				 //
-			 									 //
+			applyWave(nextPoint);			 //
+			 					 //
 		if (loadedPack->mPath.inPlace)			 // functions that modify nextPoint's xy
-			adjustInPlace(nextPoint);			 // and/or set external related values 
-												 //
+			adjustInPlace(nextPoint);		 // and/or set external related values 
+								 //
 		if (loadedPack->mRotation.active)		 //
-			applyRotation();					 //
-												 //
+			applyRotation();			 //
+								 //
 
 		pTexture->setXY(nextPoint);
 	}
@@ -372,9 +372,8 @@ void TextureMover::Preset::dispatchLineToTT(MovePack& srcMovePack, std::string& 
 	case TT_Name::FLIP:
 		srcMovePack.mFlip.parseAndAssign(dataLine); break;
 
-	case TT_Name::ENV:
+	// case TT_Name::ENV:
 		
-
 	case TT_Name::BASE:
 		throw std::runtime_error("TT_Name recorded as BASE: cannot initialize a base TranformType"); break;
 
@@ -397,7 +396,6 @@ int TextureMover::Preset::clipName(std::string& dataLine)
 }
 
 // Preset class
-// Preset(const std::string& fileName))
 
 // reads from preset .txt file
 // does a conversion based on data from each TransformType (from TTName() at the beginning of each fin row)
@@ -406,10 +404,3 @@ int TextureMover::Preset::clipName(std::string& dataLine)
 // whole thing happens in TextureMover class ( mover.loadPreset(const std::string& fileName) ? )
 	// overloaded constructor?
 
-
-
-//bool Presets::TT_NameCheck::isBase(const std::string& ttName) { return (ttName == n::BASE); }
-//bool Presets::TT_NameCheck::isPath(const std::string& ttName) { return (ttName == n::PATH); }
-//bool Presets::TT_NameCheck::isWave(const std::string& ttName) { return (ttName == n::WAVE); }
-//bool Presets::TT_NameCheck::isRotation(const std::string& ttName) { return (ttName == n::ROTATION); }
-//bool Presets::TT_NameCheck::isFlip(const std::string& ttName) { return (ttName == n::FLIP); }
