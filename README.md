@@ -53,8 +53,8 @@ Currently, the user must add execution delays manually.
 ## TRANSFORM TYPES
 
 ### Path( _LDPoint origin, LDPoint destination, int speed, bool inPlace = false_ )
-Path handles the actual movement of the texture across the screen. 
-Path is the only TranformType that **MUST** be included as an argument; failing to do so will raise an invalid_argument exception.
+⋅⋅⋅Path handles the actual movement of the texture across the screen. 
+⋅⋅⋅Path is the only TranformType that **MUST** be included as an argument; failing to do so will raise an invalid_argument exception.
 
 _LDPoint origin, LDPoint destination_ - An x and y location to mark where the texture begins and ends it's movement on screen. When adding steps beyond the first addStep(), origin may be excluded. 
 					This will cause origin to be assigned the point specified in the previous step's Path.destination, useful for creating sequences of connected movements.
