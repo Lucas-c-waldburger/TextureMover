@@ -46,8 +46,8 @@ mover();
 imgTexture.draw(renderer);
 renderer.present();
 ```
-Multiple TextureMover objects can be created with different Textures to create full animated scenes. A built in delay system between executions is planned for the near future to support this. 
-Currently, the user must add execution delays manually.
+Multiple TextureMover objects can be created with different Textures to create full animated scenes. A built in delay system between executions is planned, but not currently implemented. 
+To accomplish this, the user must manually add execution delays using SDL_Delay(), and SDL_GetTicks() timing system, or the <chrono> library.
 
 ---
 ## TRANSFORM TYPES
